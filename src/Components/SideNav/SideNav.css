@@ -1,0 +1,18 @@
+.side-nav-div{
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    font-size: 18px;
+    transition: left ease .75s;
+    top: 0%;
+    left: -100%;
+    z-index: 200;
+    border: 2px solid #707077;
+    padding: 25px 15px;
+}
+/* .side-nav-div nav{
+    background-color: red;
+} */

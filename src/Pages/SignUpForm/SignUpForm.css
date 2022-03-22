@@ -1,0 +1,80 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.nav1{
+    border: 0;
+    margin-bottom: 20px;
+}
+.login-section section{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.login-section section h1{
+    width: 100%;
+    font-weight: 100;
+    font-family: 'segoe ui', roboto, sans-serif;    
+    font-size: 70px;
+    padding-left: 10%;
+}
+.login-section section form{
+    width: 100%;
+    font-weight: 100;
+    padding: 7% 0;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.login-section section form input{
+    width: 75%;
+    height: 70px;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    margin: 10px 0;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Poppins, 'Segoe UI', Roboto, Tahoma, Geneva, Verdana, sans-serif;
+}
+.login-section section form input:focus, .login-section section form textarea:focus{
+    border: 3px solid #555;
+}
+.login-section section form input[type="submit"]{
+    border: 0;
+    background-color: #707070;
+    color: #fff;
+    font-family: Poppins, 'Segoe UI', Roboto, sans-serif;
+    font-size: 20px;
+    width: 250px;
+    transition: background ease-in-out .25s;
+    cursor: pointer;
+}
+.login-section section form textarea{
+    border: 0;
+    border: 1px solid #707070;
+    font-family: Poppins, 'Segoe UI', Roboto, sans-serif;
+    border-radius: 20px;
+    resize: none;
+    width: 75%;
+    font-size: 20px;
+    outline: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    transition: 0.25s;
+}
+.login-section section form input[type="submit"]:hover, .login-section section form input[type="submit"]:focus{
+    background-color: #8f8f8f;
+
+}
+
+@media only screen and (max-width: 375px) {
+    .login-section section form input[type="submit"]{
+        width: 75%;
+    }
+}

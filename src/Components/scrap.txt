@@ -1,0 +1,154 @@
+<div className='order'>
+                        <h3 className='order-title'>Order 1 </h3>
+                        <div className='job-title-section sec'>
+                            <h4>JOB TITLE:</h4>
+                            <div className='j-title'>Lorem Ipsum</div>
+                        </div>
+                        <div className='copies-date-section sec'>
+                            <div className='page-section'>
+                                <h4>PAGES:</h4>
+                                <h6>20</h6>
+                            </div>
+                            <div className='copies-section'>
+                                <h4>COPIES:</h4>
+                                <h6>450</h6>
+                            </div>
+                            <div className='date-section'>
+                                <h4>DATE DUE:</h4>
+                                <h6>23/09/2022</h6>
+                            </div>
+                        </div>
+                        <div className='address-section sec'>
+                            <h4>ADDRESS:</h4>
+                            <div className='address'>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Ut tempor senectus arcu cursus tortor odio ornare </p>
+                            </div>
+                        </div>
+                        <div className='info-section sec'>
+                            <h4>JOB DESCRIPTION:</h4>
+                            <div className='info'>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Ut tempor senectus arcu cursus tortor odio ornare velit 
+                                blandit. Elit faucibus ante sed nascetur. Tincidunt </p>
+                            </div>
+                        </div>
+                        <div className='buttons-section sec'>
+                            <Link to="/product">
+                                <button className='edit-btn'>EDIT</button>
+                            </Link>
+                            
+                            <button className='submit-btn'>SUBMIT ORDER</button>
+                        </div>
+                    </div>
+                    <div className='order'>
+                        <h3 className='order-title'>Order 1</h3>
+                        <div className='job-title-section sec'>
+                            <h4>JOB TITLE:</h4>
+                            <div className='j-title'>Lorem Ipsum</div>
+                        </div>
+                        <div className='copies-date-section sec'>
+                            <div className='page-section'>
+                                <h4>PAGES:</h4>
+                                <h6>20</h6>
+                            </div>
+                            <div className='copies-section'>
+                                <h4>COPIES:</h4>
+                                <h6>450</h6>
+                            </div>
+                            <div className='date-section'>
+                                <h4>DATE DUE:</h4>
+                                <h6>23/09/2022</h6>
+                            </div>
+                        </div>
+                        <div className='address-section sec'>
+                            <h4>ADDRESS:</h4>
+                            <div className='address'>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Ut tempor senectus arcu cursus tortor odio ornare </p>
+                            </div>
+                        </div>
+                        <div className='info-section sec'>
+                            <h4>JOB DESCRIPTION:</h4>
+                            <div className='info'>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Ut tempor senectus arcu cursus tortor odio ornare velit 
+                                blandit. Elit faucibus ante sed nascetur. Tincidunt </p>
+                            </div>
+                        </div>
+                        <div className='buttons-section sec'>
+                            <button className='edit-btn'>EDIT</button>
+                            <button className='submit-btn'>SUBMIT ORDER</button>
+                        </div>
+                    </div>
+                    <div className='order'>
+                        <h3 className='order-title'>Order 1</h3>
+                        <div className='job-title-section sec'>
+                            <h4>JOB TITLE:</h4>
+                            <div className='j-title'>Lorem Ipsum</div>
+                        </div>
+                        <div className='copies-date-section sec'>
+                            <div className='page-section'>
+                                <h4>PAGES:</h4>
+                                <h6>20</h6>
+                            </div>
+                            <div className='copies-section'>
+                                <h4>COPIES:</h4>
+                                <h6>450</h6>
+                            </div>
+                            <div className='date-section'>
+                                <h4>DATE DUE:</h4>
+                                <h6>23/09/2022</h6>
+                            </div>
+                        </div>
+                        <div className='address-section sec'>
+                            <h4>ADDRESS:</h4>
+                            <div className='address'>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Ut tempor senectus arcu cursus tortor odio ornare </p>
+                            </div>
+                        </div>
+                        <div className='info-section sec'>
+                            <h4>JOB DESCRIPTION:</h4>
+                            <div className='info'>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Ut tempor senectus arcu cursus tortor odio ornare velit 
+                                blandit. Elit faucibus ante sed nascetur. Tincidunt </p>
+                            </div>
+                        </div>
+                        <div className='buttons-section sec'>
+                            <button className='edit-btn'>EDIT</button>
+                            <button className='submit-btn'>SUBMIT ORDER</button>
+                        </div>
+                    </div>
+                    const changeJobTitle = (event) =>{
+        let newTitle = order;
+        newTitle.jobTitle = event.target.value;
+        setOrder(newTitle);
+    }
+    const changeCopies = (event) =>{
+        let newCopies = order;
+        newCopies.jobTitle = event.target.value;
+        setOrder(newCopies);
+    }
+    const changePages = (event) =>{
+        let newPages = order;
+        newPages.jobPages = event.target.value;
+        setOrder(newPages);
+    }
+    const changeDesc = (event) =>{
+        let newDesc = order;
+        newDesc.jobDesc = event.target.value;
+        setOrder(newDesc);
+    }
+    const changeDate = (event) =>{
+        let newDate = order;
+        newDate.jobDate = event.target.value;
+        setOrder(newDate);
+    }
+    const changeAddress = (event) =>{
+        let newAddress = order;
+        newAddress.jobAddress = event.target.value;
+        setOrder(newAddress);
+    }
+    let jobTitle = "", copies = 0, pages = 0, desc = "", address = "";

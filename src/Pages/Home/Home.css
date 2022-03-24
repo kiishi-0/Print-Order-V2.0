@@ -1,5 +1,10 @@
 @import url('https://db.onlinewebfonts.com/c/bcefde89fd9811990e90eb99bd0f39bd?family=Engravers');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+.home-div{
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+}
 .home-div section:not(.home-div .landing-container){
     width: 100%;
     display: flex;

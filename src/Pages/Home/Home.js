@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Home/Home.css';
-// import { Link , Outlet} from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import Nav1 from '../../Components/Nav1/Nav1';
 import Nav2 from '../../Components/Nav2/Nav2';
 import clientimg from '../../images/clientIcons.png';
@@ -8,11 +9,50 @@ import land from '../../images/landing-3.jpg'
 import SideNav from '../../Components/SideNav/SideNav';
 import Slide from '../../Components/Slide/Slide';
 import Categories from '../../Components/Categories/Categories';
+import cart from '../../images/cart.svg'
+import styled from 'styled-components';
+import Footer from '../../Components/Footer/Footer';
 
-
-
+const CartDiv = styled.div`
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    border: 2px solid #707070;
+    img{
+        width: 30px;
+        color: #707070
+    }
+    top: -70px;
+    right: 20px;
+`
+const OrderNumberDiv = styled.div`
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 2px solid #707070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding
+    color: #707070;
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    p{
+        color: #707070;
+        font-family: Poppins, Roboto;
+    }
+`
 
 const Home = () =>{
+    const orders = useSelector((state)=>state.orders.value)
     return(
         <div className="container">
             <header>
@@ -21,6 +61,13 @@ const Home = () =>{
                 <SideNav />
             </header> 
             <main className='home-div' id="home">
+                <Link to='/summary'>
+                    <CartDiv>
+                        <img src={cart} alt='Cart' title={orders.length + 'Orders'}/>
+                        <OrderNumberDiv><p>{orders.length}</p></OrderNumberDiv>
+                    </CartDiv>
+                </Link>
+                
                 <section className="landing-container">
                     <div className="landing">
                         <img src={land} alt="printing"/>
@@ -69,6 +116,7 @@ const Home = () =>{
                 </section>
             </main>
             {/* <Outlet /> */}
+            {/* <Footer></Footer> */}
         </div>
     )
 }

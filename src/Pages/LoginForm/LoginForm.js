@@ -12,12 +12,12 @@ class LoginForm extends React.Component{
             </header> 
             <section>
                 <h1>Login to Print Order</h1>
-                <form method="#" action='#' autoComplete='on'>
+                <form method="#" action='/' autoComplete='on'>
                     <input type="textbox" name='username' required/>
                     <input type="password" name='password' required/>
-                    <Link to='/home'>
+                    {/* <Link to='/home'> */}
                         <input type="submit" value="Login"/>
-                    </Link>
+                    {/* </Link> */}
                 </form>
             </section>
          </main>

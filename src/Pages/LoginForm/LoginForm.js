@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav1 from '../../Components/Nav1/Nav1';
 import './LoginForm.css';
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 class LoginForm extends React.Component{
 
  render(){

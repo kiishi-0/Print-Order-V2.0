@@ -11,7 +11,7 @@ import Slide from '../../Components/Slide/Slide';
 import Categories from '../../Components/Categories/Categories';
 import cart from '../../images/cart.svg'
 import styled from 'styled-components';
-import Footer from '../../Components/Footer/Footer';
+// import Footer from '../../Components/Footer/Footer';
 
 const CartDiv = styled.div`
     position: absolute;

@@ -30,6 +30,14 @@ const CartDiv = styled.div`
     }
     top: -70px;
     right: 20px;
+    @media (max-width: 912px){
+        top: 20px;
+        right: 20px;
+    }
+    @media (max-width: 768px){
+        top: 20px;
+        right: 20px;
+    }
 `
 const OrderNumberDiv = styled.div`
     background-color: #fff;

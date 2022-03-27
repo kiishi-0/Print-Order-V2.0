@@ -6,6 +6,7 @@ import SideNav from '../../Components/SideNav/SideNav';
 // import { Link } from 'react-router-dom';
 import Order from '../../Components/Order/Order'
 import { useSelector } from 'react-redux';
+// import Overlay from '../../Components/Overlay/Overlay';
 
 const SummaryPage = () =>{ 
     const orders = useSelector((state) => state.orders.value)
@@ -23,6 +24,7 @@ const SummaryPage = () =>{
                     {console.log(orders)}
                     {orders.map( (order) => <Order order={order}/>)}
                 </div>
+                
             </main>
         </div>
     )

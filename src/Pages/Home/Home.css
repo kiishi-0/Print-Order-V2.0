@@ -8,7 +8,7 @@
 .home-div section:not(.home-div .landing-container){
     width: 100%;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;

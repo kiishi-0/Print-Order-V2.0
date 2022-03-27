@@ -1,9 +1,14 @@
 import React from 'react';
 // import '../Order/Order.css'
 import { Link } from 'react-router-dom';
+import Overlay from '../Overlay/Overlay';
 
 const Order = (props) =>{
+        
     const order = props.order;
+    const DisplayOverlay = () =>{
+        document.getElementById('overlay').style.display = 'flex'
+    }
     return(
         <div className="order-container">
             <div className='order'>
@@ -43,8 +48,9 @@ const Order = (props) =>{
                                 <button className='edit-btn'>EDIT</button>
                             </Link>
                             
-                            <button className='submit-btn'>SUBMIT ORDER</button>
+                            <button className='submit-btn' onClick={DisplayOverlay}>SUBMIT ORDER</button>
                         </div>
+                        <Overlay />
                     </div>
         </div>
     )

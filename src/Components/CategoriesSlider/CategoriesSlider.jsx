@@ -20,7 +20,7 @@ const CategoriesSlider =() =>{
     return(
         <div className="categories-slider-section">
             <Carousel breakPoints={breakPoints}>
-            <Link to={`/product/${'magazine'}`}>
+                        <Link to={`/product/${'magazine'}`}>
                             <div className='cat'>
                                 <img src={mag} alt="Magazine" />
                                 <div className='details'>

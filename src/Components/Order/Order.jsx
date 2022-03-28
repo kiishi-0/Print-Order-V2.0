@@ -2,12 +2,26 @@ import React from 'react';
 // import '../Order/Order.css'
 import { Link } from 'react-router-dom';
 import Overlay from '../Overlay/Overlay';
-
+import { useDispatch} from 'react-redux';
+import { removeOrder } from '../../Features/orders';
 const Order = (props) =>{
-        
+    const dispatch = useDispatch();
+
+    
     const order = props.order;
     const DisplayOverlay = () =>{
         document.getElementById('overlay').style.display = 'flex'
+    }
+    // const orders = useSelector((state) => state.orders.value)
+    // console.log(orders.filter(or => or.id !== order.id))
+    const handleSubmit=()=>{
+        // document.getElementById('overlay').style.display = 'flex'
+        dispatch(removeOrder(order.id));
+        console.log('done');
+    }
+    const handler = () =>{
+        handleSubmit();
+        DisplayOverlay();
     }
     return(
         <div className="order-container">
@@ -45,10 +59,10 @@ const Order = (props) =>{
                         </div>
                         <div className='buttons-section sec'>
                             <Link to="/product">
-                                <button className='edit-btn'>EDIT</button>
+                                <button className='edit-btn' >EDIT</button>
                             </Link>
                             
-                            <button className='submit-btn' onClick={DisplayOverlay}>SUBMIT ORDER</button>
+                            <button className='submit-btn' onClick={handler}>SUBMIT ORDER</button>
                         </div>
                         <Overlay />
                     </div>

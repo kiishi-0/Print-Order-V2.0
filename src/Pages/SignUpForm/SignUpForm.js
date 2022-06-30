@@ -16,12 +16,16 @@ const SignUpForm = () => {
         id: id,
         cName: "",
         email: "",
-        address: ""
+        address: "",
+        number: 0
     });
     const [message, setMessage] = useState('')
     const [togo, setTogo] = useState('/signup')
     const changeCName = (event) =>{
         newUser.cName = event.target.value
+    }
+    const changeNumber = (event) =>{
+        newUser.number = event.target.value
     }
     const changeEmail = (event) =>{
         newUser.email = event.target.value
@@ -63,9 +67,10 @@ const SignUpForm = () => {
                 <h4 color='red'>{message}</h4>
                 <input type="text" name='cname' placeholder='Company Name' onChange={changeCName} required/>
                 <input type="email" name='email'  placeholder='Email' onChange={changeEmail} required/>
+                <input type="number" name='phone'  placeholder='Phone Number' onChange={changeNumber} required/>
                 <input type="password" name='password'  placeholder='Password' required/>
                 <input type="password" name='confirm password'  placeholder='Confirm Password' required/>
-                <textarea name="w3review" rows="5" placeholder='Company Address' onChange={changeAddress} required></textarea>
+                <textarea name="company" rows="5" placeholder='Company Address' onChange={changeAddress} required></textarea>
                 <Link to={togo}>
                     <input type="submit" value="Sign Up" onClick={() => isUser(newUser)}/>
                 </Link>

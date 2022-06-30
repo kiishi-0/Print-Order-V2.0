@@ -12,12 +12,8 @@ const Order = (props) =>{
     const DisplayOverlay = () =>{
         document.getElementById('overlay').style.display = 'flex'
     }
-    // const orders = useSelector((state) => state.orders.value)
-    // console.log(orders.filter(or => or.id !== order.id))
     const handleSubmit=()=>{
-        // document.getElementById('overlay').style.display = 'flex'
         dispatch(removeOrder(order.id));
-        console.log('done');
     }
     const handler = () =>{
         handleSubmit();

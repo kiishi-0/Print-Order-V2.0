@@ -4,13 +4,18 @@ import styled from 'styled-components'
 const CustomerOrderContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 85%;
+    align-items: center;
+    // background: red;
+    width: 100%;
     padding-bottom: 100px;
+    h1{
+        margin-bottom: 50px;
+    }
 `
 const CustomerOrderDiv = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 85%;
     background: #F3F3F3;
     padding: 25px;
     border-radius: 20px;

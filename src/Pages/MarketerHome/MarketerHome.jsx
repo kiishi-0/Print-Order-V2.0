@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import Nav1 from '../../Components/Nav1/Nav1';
 import '../MarketerHome/MarketerHome.css'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 const OrderBtnDiv = styled.div`
@@ -89,7 +90,10 @@ const MarketerHome = () =>{
                             <p>DUE: 20/09/2022</p>
                             <p>JOB STATUS: PENDING</p>
                             <OrderBtnDiv>
-                                <OrderBtn>View Order</OrderBtn>
+                                <Link to='/cpage'>
+                                    <OrderBtn>View Order</OrderBtn>
+                                </Link>
+                                
                             </OrderBtnDiv>
                         </CusDetails>
                         
@@ -104,7 +108,9 @@ const MarketerHome = () =>{
                             <p>DUE: 20/09/2022</p>
                             <p>JOB STATUS: PENDING</p>
                             <OrderBtnDiv>
-                                <OrderBtn>View Order</OrderBtn>
+                                <Link to='/cpage'>
+                                    <OrderBtn>View Order</OrderBtn>
+                                </Link>
                             </OrderBtnDiv>
                             
                         </CusDetails>
@@ -119,7 +125,9 @@ const MarketerHome = () =>{
                             <p>DUE: 20/09/2022</p>
                             <p>JOB STATUS: PENDING</p>
                             <OrderBtnDiv>
-                                <OrderBtn>View Order</OrderBtn>
+                                <Link to='/cpage'>
+                                    <OrderBtn>View Order</OrderBtn>
+                                </Link>
                             </OrderBtnDiv>
                         </CusDetails>
                     </CustomerDiv>

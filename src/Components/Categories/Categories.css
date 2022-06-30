@@ -22,7 +22,7 @@ section.categories-section   {
 }
 section.categories-section .cat{
   background-color: #707070;
-  width: 100%;
+  width: 320px;
   height: 380px;
   margin: 0 15px;
   position: relative;
@@ -94,6 +94,9 @@ section.categories-section .cat img{
   }
 }
 @media only screen and (max-width: 280px){
+  section.categories-section .cat{
+    width: 250px;
+  }
   section.categories-section .carousel{
     padding: 0 1%;
   }

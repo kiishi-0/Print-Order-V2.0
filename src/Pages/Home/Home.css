@@ -126,9 +126,11 @@
         width: 360px;
     }
 }
-@media only screen and (max-width: 280px){
+@media only screen and (max-width: 358px){
+    .home-div .clients-section .clients-container .img-container{
+        width: 80%;
+    }
     .home-div .clients-section .clients-container .img-container img{
-        width: 250px;
+        width: 100%;
     }
 }
-

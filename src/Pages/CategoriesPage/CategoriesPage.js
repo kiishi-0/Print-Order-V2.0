@@ -42,7 +42,7 @@ const CategoriesPage = () => {
                 <Nav2 />
                 <SideNav/>
             </header>
-            <main>
+            <main class="categories-page">
                 <h1>Categories</h1>
                 <section class="categories-container">
                 <Link to={`/product/${'magazine'}`}>

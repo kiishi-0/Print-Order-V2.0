@@ -3,6 +3,7 @@
 .home-div{
     width: 100%;
     position: relative;
+    margin-top: 50px;
     /* background-color: red; */
 }
 .home-div section:not(.home-div .landing-container, .categories-section){
@@ -58,7 +59,7 @@
 .p-works-section .p-works-carousel-container{
     width: 50vw;
     height: 30vw;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     background-color: #707070;
     overflow: hidden;
 }
@@ -88,6 +89,9 @@
     padding-left: 10%;
     margin-bottom: 50px;
     font-size: 30px;
+}
+button.image-gallery-icon.image-gallery-left-nav svg, button.image-gallery-icon.image-gallery-right-nav svg {
+    height: 100px;
 }
 @media only screen and (max-width: 820px){
     .home-div section:not(.home-div .landing-container, .categories-section){
@@ -132,5 +136,15 @@
     }
     .home-div .clients-section .clients-container .img-container img{
         width: 100%;
+    }
+}
+@media only screen and (max-width: 381px){
+    .about-section{
+        min-height: 150vh !important;
+    }
+}
+@media only screen and (max-width: 280px){
+    .about-section{
+        min-height: 200vh !important;
     }
 }

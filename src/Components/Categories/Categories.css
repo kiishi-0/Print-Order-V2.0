@@ -87,7 +87,15 @@ section.categories-section .cat img{
   height: 100%;
   object-fit: cover;
 }
-
+.nEINB{
+  background-color: #707070 !important;
+  box-shadow: 0 0 1px 3px #707070 !important;
+}
+.PIJXl:hover:enabled, .PIJXl:focus:enabled {
+  color: #fff;
+  background-color: #707070 !important;
+  box-shadow: 0 0 2px 0 #707070 !important;
+}
 @media only screen and (max-width: 639px) and (min-width: 580px){
   section.categories-section .carousel{
     padding: 0 10%;

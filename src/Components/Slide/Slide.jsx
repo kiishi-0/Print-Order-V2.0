@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import '../Slide/Slide.css';
+import cal2 from '../../images/cal2.jpg'
 // import cal1 from '../../images/p-calendar.jpeg'
 
 const images = [
@@ -19,6 +20,10 @@ const images = [
     {
       original: 'https://picsum.photos/id/1019/1000/600/',
       thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    },
+    {
+      original: 'https://images.pexels.com/photos/5417675/pexels-photo-5417675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      thumbnail: {cal2},
     },
   ];
 const Slide = () =>{

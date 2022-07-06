@@ -6,12 +6,15 @@ import SideNav from '../../Components/SideNav/SideNav';
 // import { Link } from 'react-router-dom';
 import Order from '../../Components/Order/Order'
 import { useSelector} from 'react-redux';
-// import Overlay from '../../Components/Overlay/Overlay';
+import Overlay from '../../Components/Overlay/Overlay';
 
 const SummaryPage = () =>{ 
     
     const orders = useSelector((state) => state.orders.value)
     // console.log(orders)
+    const DisplayOverlay = () =>{
+        document.getElementById('overlay').style.display = 'flex'
+    }
     return(
         <div className='container'>
             <header>
@@ -23,10 +26,11 @@ const SummaryPage = () =>{
                 <h1>Order Summary</h1>
                 <div className='orders'>
                     {/* {console.log(orders)} */}
-                    {orders.map( (order) => <Order order={order}/>)}
+                    {orders.map( (order) => <Order displayOverlay={DisplayOverlay} order={order}/>)}
                 </div>
                 
             </main>
+            <Overlay />
         </div>
     )
 }

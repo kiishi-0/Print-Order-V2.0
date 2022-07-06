@@ -4,6 +4,7 @@ import '../Slide/Slide.css';
 import cal1 from '../../images/cal1.jpg'
 import cal2 from '../../images/cal2.jpg'
 import bro2 from '../../images/bro2.jpg'
+import mag2 from '../../images/mag2.jpg'
 // import cal1 from '../../images/p-calendar.jpeg'
 
 const images = [
@@ -26,6 +27,10 @@ const images = [
     {
       original: 'https://raw.githubusercontent.com/kiishi-0/Print-Order-V2.0/main/src/images/bro2.jpg',
       thumbnail: {bro2},
+    },
+    {
+      original: "https://github.com/kiishi-0/Print-Order-V2.0/blob/main/src/images/mag2.jpg?raw=true",
+      thumbnail: {mag2},
     },
   ];
 const Slide = () =>{

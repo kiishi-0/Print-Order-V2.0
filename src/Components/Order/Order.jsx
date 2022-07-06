@@ -1,23 +1,23 @@
 import React from 'react';
 // import '../Order/Order.css'
 import { Link } from 'react-router-dom';
-import Overlay from '../Overlay/Overlay';
+// import Overlay from '../Overlay/Overlay';
 import { useDispatch} from 'react-redux';
 import { removeOrder } from '../../Features/orders';
 const Order = (props) =>{
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(props);
 
     
     const order = props.order;
-    const DisplayOverlay = () =>{
-        document.getElementById('overlay').style.display = 'flex'
-    }
+    // const DisplayOverlay = () =>{
+    //     document.getElementById('overlay').style.display = 'flex'
+    // }
     const handleSubmit=()=>{
         dispatch(removeOrder(order.id));
     }
     const handler = () =>{
         handleSubmit();
-        DisplayOverlay();
+        props.displayOverlay();
     }
     return(
         <div className="order-container">
@@ -60,7 +60,7 @@ const Order = (props) =>{
                             
                             <button className='submit-btn' onClick={handler}>SUBMIT ORDER</button>
                         </div>
-                        <Overlay />
+                        
                     </div>
         </div>
     )

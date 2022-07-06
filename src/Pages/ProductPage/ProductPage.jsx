@@ -65,7 +65,6 @@ const ProductPage = () => {
                 <div className="title-div">
                     <h1>{params.name.toUpperCase()}</h1>
                     <div className="slide">
-                    <Slide />
                     </div>
                 </div>
                 <div className="product-details-div">

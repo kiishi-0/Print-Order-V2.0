@@ -99,7 +99,7 @@ const SideNav = () =>{
                         <nav>GALLERY</nav>
                     </Link>
                     <LogDiv>
-                        <LogButton>LOG OUT</LogButton>
+                        <LogButton>SIGN UP</LogButton>
                     </LogDiv>
                 </NavContainer>
                 

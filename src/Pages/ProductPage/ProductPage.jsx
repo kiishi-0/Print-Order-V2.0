@@ -4,7 +4,7 @@ import '../ProductPage/ProductPage.css';
 import Nav1 from '../../Components/Nav1/Nav1';
 import Nav2 from '../../Components/Nav2/Nav2';
 import SideNav from '../../Components/SideNav/SideNav';
-import Slide from '../../Components/Slide/Slide';
+// import Slide from '../../Components/Slide/Slide';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { addOrder } from '../../Features/orders';

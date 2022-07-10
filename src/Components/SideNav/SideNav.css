@@ -9,10 +9,18 @@
     transition: left ease .75s;
     top: 0%;
     left: -100%;
-    z-index: 200;
+    z-index: 250;
     border: 2px solid #707077;
     padding: 25px 15px;
 }
 /* .side-nav-div nav{
     background-color: red;
 } */
+.side-nav-disappear{
+    display: none;
+}
+@media (max-width: 414px){
+    .side-nav-disappear{
+        display: block;
+    }
+}

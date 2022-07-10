@@ -89,6 +89,12 @@ const SideNav = () =>{
                     <Link to="/">
                         <nav>HOME</nav>
                     </Link>
+                    <a href="#about" className='side-nav-disappear' onClick={closeNav}>
+                        <nav>ABOUT</nav>
+                    </a>
+                    <a href="#contacts" className='side-nav-disappear' onClick={closeNav}>
+                        <nav>CONTACTS</nav>
+                    </a>
                     <Link to="/cat">
                         <nav>CATEGORIES</nav>
                     </Link>

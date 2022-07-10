@@ -10,7 +10,7 @@ textarea{
 .product-div .title-div{
     display: flex;
     align-items: flex-end;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     margin-top: 50px;
 }
 .product-div .title-div h1, .product-div .title-div .carousel{
@@ -130,8 +130,8 @@ textarea{
     .product-div .title-div{
         display: flex;
         align-items: flex-end;
-        margin-bottom: 80px;
-        margin-top: 50px;
+        /* margin-bottom: 80px;
+        margin-top: 50px; */
         flex-direction: column;
     }
     .product-div .title-div h1, .product-div .title-div .carousel{
@@ -154,7 +154,7 @@ textarea{
     }
     .product-div .title-div h1{
         padding-left: 0;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 }
 @media only screen and (max-width: 441px){

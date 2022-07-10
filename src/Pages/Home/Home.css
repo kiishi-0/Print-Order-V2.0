@@ -20,7 +20,7 @@
     width: 100%;
     text-align: left;
     padding-left: 10%;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     font-size: 30px;
     color: #707070;
 }
@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 75px;
+    font-size: clamp(4.5rem, 10vw, 8rem);
     color: #fff;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -66,7 +66,7 @@
 }
 
 .home-div .p-works-section h3{
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .home-div .about-section .about-text{
@@ -98,6 +98,9 @@ button.image-gallery-icon.image-gallery-left-nav svg, button.image-gallery-icon.
     /* .home-div section:not(.home-div .landing-container, .categories-section){
         height: 60vh;
     } */
+    .home-div .landing-container{
+        height: 80vh;
+    }
     .p-works-section .p-works-carousel-container{
         width: 80vw;
         height: 48vw;
@@ -113,6 +116,12 @@ button.image-gallery-icon.image-gallery-left-nav svg, button.image-gallery-icon.
     }
     .home-div .clients-section .clients-container .img-container img{
         width: 360px;
+    }
+    .home-div{
+        margin-top: 10px;
+    }
+    .home-div .landing-container{
+        height: 80vh;
     }
 }
 @media only screen and (max-width: 441px){

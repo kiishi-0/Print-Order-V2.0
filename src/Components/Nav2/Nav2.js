@@ -9,16 +9,16 @@ const openSideNav = () =>{
 }
 const Nav2 = () =>{
     return (
-        <nav className="nav2">
-            <button className="burger" onClick={openSideNav}>
+        <nav className="nav2 disappear">
+            <button className="nav-disappear burger" onClick={openSideNav}>
                 <img src={burger} alt="burger bars"/>
             </button>
             <div className="burger-div">
-                <NavLink to="/">
+                <NavLink to="/" className='nav-disappear'>
                     <a href="#home">HOME</a>
                 </NavLink>
-                <a href="/#about">ABOUT</a>
-                <a href="/#contact">CONTACTS</a>
+                <a href="/#about" className='nav-disappear'>ABOUT</a>
+                <a href="/#contact" className='nav-disappear'>CONTACTS</a>
             </div>
         </nav>
     )

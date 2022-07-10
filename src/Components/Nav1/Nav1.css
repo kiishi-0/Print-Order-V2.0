@@ -32,3 +32,19 @@ nav{
         margin-left: 30px;
     }
 }
+
+.nav-disappear{
+    display: inline-block !important;
+}
+.buger-disappear{
+    display: none;
+}
+@media (max-width: 414px){
+    .nav-disappear{
+        display: none !important;
+    }
+    .buger-disappear{
+        display: inline-block;
+    }
+}
+

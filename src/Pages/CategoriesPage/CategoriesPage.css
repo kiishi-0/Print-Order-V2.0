@@ -10,7 +10,7 @@ h1{
     text-align: left;
     padding-left: 10%;
     font-weight: 400;
-    font-size: 50px;
+    font-size: clamp(3rem, 10vw, 8rem);
     color: #707070;
     font-family: Poppins, 'Segoe UI', Roboto, Tahoma, Geneva, Verdana, sans-serif;
 }

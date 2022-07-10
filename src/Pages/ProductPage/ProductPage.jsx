@@ -73,8 +73,8 @@ const ProductPage = () => {
                         <div className="sec-div">
                             <div className='sec1 sec'>
                                 <input type="text" name="title" id="title" placeholder='Job Title' onChange={changeJobTitle}/>
-                                <input type="number" name="copies" id="copies" placeholder='Number of Copies' onChange={changeCopies}/>
-                                <input type="number" name="pages" id="pages" placeholder='Number of Pages' onChange={changePages}/>
+                                <input type="number" name="copies" id="copies" placeholder='Number of Copies' onChange={changeCopies} min="0"/>
+                                <input type="number" name="pages" id="pages" placeholder='Number of Pages' onChange={changePages} min="0"/>
                                 <textarea name="description" id="description" cols="30" rows="5" placeholder='Job Description' onChange={changeDesc}></textarea>
                             </div>
                             <div className='sec2 sec'>

@@ -3,6 +3,7 @@ button{
     border: 0;
     cursor: pointer;
 }
+
 nav.nav2{
     border: 0;
     box-shadow: 0 -2px 0 0 #707070;
@@ -24,5 +25,11 @@ nav.nav2 .burger-div a{
 @media only screen and (max-width: 1024px) {
     .nav2 .burger-div a{
         margin-left: 30px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    nav.nav2.disappear{
+        box-shadow: none !important;
+        border-top: 1px solid #181818;
     }
 }

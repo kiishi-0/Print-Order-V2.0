@@ -4,13 +4,15 @@
     flex-direction: column;
     align-items: center;
     margin-top: 4%;
+    min-height: 80vh;
+    /* margin-top: 5vh; */
 }
-h1{
+.categories-page h1{
     width: 100%;
     text-align: left;
     padding-left: 10%;
     font-weight: 400;
-    font-size: clamp(3rem, 10vw, 8rem);
+    font-size: clamp(3rem, 10vw, 5rem);
     color: #707070;
     font-family: Poppins, 'Segoe UI', Roboto, Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -25,6 +25,13 @@ textarea{
 .product-div h1{
     /* background-color: red; */
     padding-left: 5%;
+    width: 100%;
+    text-align: left;
+    padding-left: 10%;
+    font-weight: 400;
+    font-size: clamp(3rem, 10vw, 8rem);
+    color: #707070;
+    font-family: Poppins, 'Segoe UI', Roboto, Tahoma, Geneva, Verdana, sans-serif;
 }
 .product-div .product-details-div{
     display: flex;

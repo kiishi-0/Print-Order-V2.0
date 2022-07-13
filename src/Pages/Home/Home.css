@@ -13,15 +13,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 150px 0;
+    margin: 100px 0;
     font-family: Poppins, Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.p-works-section{
+    padding: 50px 0;
+    margin: 0 0 100px !important;
 }
 .home-div section h3{
     width: 100%;
     text-align: left;
     padding-left: 10%;
-    margin-bottom: 70px;
-    font-size: 30px;
+    margin-bottom: 50px;
+    font-size: clamp(0.7rem, 10vw, 2.25rem);
+    font-weight: 500;
     color: #707070;
 }
 .home-div .landing-container{
@@ -66,7 +71,10 @@
 }
 
 .home-div .p-works-section h3{
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+}
+.about-container{
+    width: 100%;
 }
 
 .home-div .about-section .about-text{
@@ -89,7 +97,7 @@
     text-align: left;
     padding-left: 10%;
     margin-bottom: 50px;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 button.image-gallery-icon.image-gallery-left-nav svg, button.image-gallery-icon.image-gallery-right-nav svg {
     height: 100px;
@@ -131,11 +139,11 @@ button.image-gallery-icon.image-gallery-left-nav svg, button.image-gallery-icon.
     /* .home-div section:not(.home-div .landing-container){
         height: 75vh;
     } */
-    .home-div .about-section .about-text{
+    /* .home-div .about-section .about-text{
         width: 100%;
         padding: 0 20px;
         text-align: center;
-    }
+    } */
     .home-div .clients-section .clients-container .img-container img{
         width: 360px;
     }

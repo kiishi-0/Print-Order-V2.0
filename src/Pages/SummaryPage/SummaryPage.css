@@ -2,7 +2,8 @@
 
 .summary-div{
     width: 100%;
-    padding-bottom: 100px;
+    padding: 0 0% 100px;
+    /* padding-bottom: 100px; */
 }
 .summary-div h1{
     font-size: 55px;
@@ -126,7 +127,7 @@
         font-size: 40px;
     }
     .summary-div .orders .order{
-        width: 400px;
+        width: calc(100%);
         margin: 15px 0;
     }
     .summary-div .orders .order .copies-date-section div{

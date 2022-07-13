@@ -60,7 +60,7 @@ export default function Overlay(props) {
 
 
   return (
-    <div className='overlay-container' id='overlay'>
+    <div className='overlay-container' id='overlay' onClick={handleCloseDisplay}>
         <OverlayDiv>
             <ImageDiv>
                 <img src={close2} alt="close" onClick={handleCloseDisplay}/>

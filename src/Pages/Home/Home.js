@@ -58,6 +58,40 @@ const OrderNumberDiv = styled.div`
         font-family: Poppins, Roboto;
     }
 `
+const AboutContent = styled.div`
+    color: #707070;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    @media(max-width: 728px){
+        flex-direction: column;
+    }
+`
+const AboutImage = styled.div`
+    background: #707070;
+    width: calc(280px - 2%);
+    height: 250px;
+    margin: 0 10px;
+    @media(max-width: 728px){
+        margin: 20px auto;
+        display: none;
+    }
+    @media(max-width: 428px){
+        
+    }
+`
+const AboutText = styled.div`
+    width: 50%;
+    padding: 0 20px;
+    text-align: left;
+    @media(max-width: 728px){
+        width: 100%;
+        padding: 0;
+    }
+`
 
 const Home = () =>{
     const orders = useSelector((state)=>state.orders.value)
@@ -91,27 +125,22 @@ const Home = () =>{
                 <section className='about-section' id="about">
                     <div className='about-container'>
                         <h3>About Us</h3>
-                        <p className='about-text'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Id nibh tortor id aliquet lectus proin nibh nisl
-                        condimentum. Leo a diam sollicitudin tempor id eu nisl 
-                        nunc. Gravida in fermentum et sollicitudin ac orci phasellus. 
-                        Sit amet commodo nulla facilisi nullam vehicula ipsum. 
-                        Sed elementum tempus egestas sed sed. Suspendisse in 
-                        est ante in nibh mauris cursus. Amet mattis vulputate enim
-                        nulla aliquet porttitor lacus. Habitant morbi tristique 
-                        senectus et netus et. Quam vulputate dignissim suspendisse 
-                        in est ante in. Volutpat est velit egestas dui id ornare 
-                        arcu. Felis eget velit aliquet sagittis. Magna fringilla 
-                        urna porttitor rhoncus dolor purus non enim praesent. 
-                        Vel pretium lectus quam id leo. In eu mi bibendum neque 
-                        egestas congue quisque egestas diam. Commodo nulla facilisi 
-                        nullam vehicula ipsum a. Ut eu sem integer vitae justo 
-                        eget magna fermentum iaculis. Nullam eget felis eget nunc lobortis 
-                        mattis aliquam faucibus purus. Scelerisque viverra mauris in aliquam. 
-                        Mi ipsum faucibus vitae aliquet nec.
-                        </p>
+                        <AboutContent>
+                            <AboutText>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Id nibh tortor id aliquet lectus proin nibh nisl
+                            condimentum. Leo a diam sollicitudin tempor id eu nisl 
+                            nunc. Gravida in fermentum et sollicitudin ac orci phasellus. 
+                            Sit amet commodo nulla facilisi nullam vehicula ipsum. 
+                            Sed elementum tempus egestas sed sed. Suspendisse in 
+                            est ante in nibh mauris cursus. Amet mattis vulputate enim
+                            nulla aliquet porttitor lacus.
+                            </AboutText>
+                            <AboutImage></AboutImage>
+                        </AboutContent>
+
+                        
                     </div>
                 </section>
                 <section className='clients-section'>

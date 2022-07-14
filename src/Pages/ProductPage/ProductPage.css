@@ -24,12 +24,12 @@ textarea{
 }
 .product-div h1{
     /* background-color: red; */
-    padding-left: 5%;
+    /* padding-left: 5%; */
     width: 100%;
     text-align: left;
-    padding-left: 10%;
+    padding-left: 5%;
     font-weight: 400;
-    font-size: clamp(3rem, 10vw, 8rem);
+    font-size: clamp(3rem, 10vw, 5rem);
     color: #707070;
     font-family: Poppins, 'Segoe UI', Roboto, Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -165,9 +165,14 @@ textarea{
     }
 }
 @media only screen and (max-width: 441px){
+    .product-div .title-div{
+        padding: 0;
+        padding-left: 5%;
+    }
     .product-div .product-details-div .details-div .sec{
         width: 100%;
     }
+
     .product-div .title-div h1, .product-div .title-div .carousel .slide{
         width: 100%;
     }

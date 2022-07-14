@@ -102,10 +102,32 @@ section.categories-section .cat img{
   background-color: #707070 !important;
   box-shadow: 0 0 1px 3px #707070 !important;
 }
-.PIJXl:hover:enabled, .PIJXl:focus:enabled {
+/* .PIJXl:hover:enabled, .PIJXl:focus:enabled {
   color: #fff;
   background-color: #707070 !important;
   box-shadow: 0 0 2px 0 #707070 !important;
+} */
+.rec-arrow{
+  background-color: transparent !important;
+  box-shadow: 0 !important;
+  border-radius: 0% !important;
+  border: 0 !important;
+  
+}
+.PIJXl, .bohrNP{
+  box-shadow: none !important;
+  padding: 0 !important;
+  color: #707070 !important;
+  font-size: 3em !important;
+  font-weight: 100;
+}
+.PIJXl:hover:enabled, .PIJXl:focus:enabled {
+  background-color: transparent !important;
+  color: #333333 !important;
+  box-shadow: 0 !important;
+}
+.bohrNP:disabled {
+  color: #c4c4c4 !important;
 }
 @media only screen and (max-width: 639px) and (min-width: 580px){
   section.categories-section .carousel{

@@ -10,6 +10,8 @@ import SideNav from '../../Components/SideNav/SideNav';
 import Slide from '../../Components/Slide/Slide';
 import Categories from '../../Components/Categories/Categories';
 import cart from '../../images/cart.svg'
+import aboutImg from '../../images/about.jpg'
+
 import styled from 'styled-components';
 // import Footer from '../../../node_modules/rc-footer/lib/index.d.ts';
 
@@ -73,8 +75,12 @@ const AboutContent = styled.div`
 const AboutImage = styled.div`
     background: #707070;
     width: calc(280px - 2%);
-    height: 250px;
+    height: 170px;
     margin: 0 10px;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
     @media(max-width: 728px){
         margin: 20px auto;
         display: none;
@@ -137,7 +143,9 @@ const Home = () =>{
                             est ante in nibh mauris cursus. Amet mattis vulputate enim
                             nulla aliquet porttitor lacus.
                             </AboutText>
-                            <AboutImage></AboutImage>
+                            <AboutImage>
+                                <img src={aboutImg} alt="Printing Machine" title='Printing Machine'></img>
+                            </AboutImage>
                         </AboutContent>
 
                         

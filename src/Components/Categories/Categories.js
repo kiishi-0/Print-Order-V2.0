@@ -7,7 +7,7 @@ import brochure from '../../images/brochures.jpg'
 import mag from '../../images/magazine-2.jpg'
 import cal from '../../images/calendar.jpg'
 import pck from '../../images/product-package.png'
-
+import aboutImg from '../../images/about.jpg'
 import '../Categories/Categories.css';
 
 const Categories = (props) =>{

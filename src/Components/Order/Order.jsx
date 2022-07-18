@@ -20,7 +20,6 @@ const Order = (props) =>{
         props.displayOverlay();
     }
     return(
-        <div className="order-container">
             <div className='order'>
                         <h3 className='order-title'>Order {order.id} | {order.product.toUpperCase()}</h3>
                         <div className='job-title-section sec'>
@@ -62,7 +61,6 @@ const Order = (props) =>{
                         </div>
                         
                     </div>
-        </div>
     )
 }
 

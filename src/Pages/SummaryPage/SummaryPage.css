@@ -9,6 +9,7 @@
     font-size: 55px;
     font-weight: 300;
     margin-bottom: 50px;
+    color: #707070;
 }
 .summary-div .orders{
     width: 100%;
@@ -125,9 +126,15 @@
 @media only screen and (max-width: 441px){
     .summary-div h1{
         font-size: 40px;
+        margin-left: 5%;
+    }
+    .summary-div .orders{
+        width: calc(100%);
+        margin: 15px 0;
+        padding: 0;
     }
     .summary-div .orders .order{
-        width: calc(100%);
+        width: calc(100% - 10%);
         margin: 15px 0;
     }
     .summary-div .orders .order .copies-date-section div{

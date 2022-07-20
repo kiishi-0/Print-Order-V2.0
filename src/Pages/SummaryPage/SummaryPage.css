@@ -10,6 +10,11 @@
     font-weight: 300;
     margin-bottom: 50px;
     color: #707070;
+    margin-left: 5%;
+}
+.summary-div .order-status{
+    font-weight: 400px;
+    /* padding-left: 10%; */
 }
 .summary-div .orders{
     width: 100%;
@@ -124,6 +129,9 @@
     }
 }
 @media only screen and (max-width: 441px){
+    .summary-div .order-status{
+        padding-left: 10%;
+    }
     .summary-div h1{
         font-size: 40px;
         margin-left: 5%;

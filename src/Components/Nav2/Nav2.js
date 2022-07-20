@@ -15,7 +15,7 @@ const Nav2 = () =>{
             </button>
             <div className="burger-div">
                 <NavLink to="/" className='nav-disappear'>
-                    <a href="#home">HOME</a>
+                    HOME
                 </NavLink>
                 <a href="/#about" className='nav-disappear'>ABOUT</a>
                 <a href="/#contact" className='nav-disappear'>CONTACTS</a>

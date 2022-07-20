@@ -36,15 +36,15 @@ const CategoriesPage = () => {
     //     {width: 1200, itemsToShow: 4},
     // ];
     return(
-        <div class="container">
+        <div className="container">
             <header>
                 <Nav1 />
                 <Nav2 />
                 <SideNav/>
             </header>
-            <main class="categories-page">
+            <main className="categories-page">
                 <h1>Categories</h1>
-                <section class="categories-container">
+                <section className="categories-container">
                 <Link to={`/product/${'magazine'}`}>
                             <div className='cat'>
                                 <img src={mag} alt="Magazine" />

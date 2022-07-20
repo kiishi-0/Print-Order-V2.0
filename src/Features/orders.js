@@ -13,9 +13,14 @@ export const ordersSlice = createSlice({
         removeOrder: (state, action) =>{
             let oldOrderID = action.payload;
             let newValue = state.value;
+
+            let submitted = state.value[oldOrderID-1]
+            localStorage.setItem(`order${submitted.id}`, JSON.stringify(submitted));
+            var retrievedObject = localStorage.getItem(`order${submitted.id}`);
             
             state.value = newValue.filter(order => order.id !== oldOrderID);;
-            console.log(state.value)
+            
+            console.log(JSON.parse(retrievedObject));
         }
     }
 });

@@ -54,7 +54,7 @@ const ProductPage = () => {
         dispatch(addOrder(order))
     }
     return(
-        <div class="container">
+        <div className="container">
             <header>
                 <Nav1 />
                 <Nav2 />
